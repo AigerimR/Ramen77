@@ -1,0 +1,113 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #000;
+  background: #fff;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+}
+
+h1 {
+  color: #f7191e;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  margin: 1rem;
+}
+.line {
+  border-bottom: 2px solid #f7191e;
+  width: 80%;
+  display: block;
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.container {
+  width: 90vw;
+  margin: auto;
+}
+.section-name {
+  display: flex;
+  margin: 0 5rem;
+}
+.titles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 30%;
+  margin: 1rem;
+  text-align: left;
+  flex-basis: 25vw;
+}
+.card h3 {
+  border-bottom: 2px dashed #c9c9c9;
+  margin: 0;
+}
+.card p {
+  margin: 0;
+}
+.card h3 span {
+  float: right;
+  font-weight: 300;
+}
+
+/* NavBar */
+nav {
+  width: 60%;
+  margin: auto;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+a:hover {
+  background-color: #f7191e;
+}
+
+@media (max-width: 768px) {
+  /* MENU page */
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  nav ul,
+  .titles {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+  }
+  .section-name {
+    margin: 1rem 0;
+  }
+  .section-name h1 {
+    margin: 0;
+  }
+  .card {
+    width: 100%;
+    margin: 0;
+  }
+  .line {
+    width: 70%;
+
+    margin-left: 0.5rem;
+  }
+  ul {
+    padding: 0;
+  }
+  a {
+    padding: 0.2rem;
+  }
+  h1 {
+    margin: 0rem;
+  }
+}
