@@ -1,12 +1,4 @@
 "use strict";
-// // For our menu buttons
-// // const menuBtn = document.querySelectorAll(".menu-btn");
-// const menuBtn = document.querySelectorAll(".btn-red ");
-// // const menuBtn2 = document.querySelector(".btn-red");
-// // menuBtn.addEventListener("click", function () {});
-// menuBtn.addEventListener("click", function () {
-//   return window.open("http://127.0.0.1:5500/menu.html", "_blank");
-// });
 
 // For a PopUp window
 const popupWindow = document.querySelector(".popup");

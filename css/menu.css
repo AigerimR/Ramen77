@@ -11,31 +11,26 @@ h1 {
   color: #f7191e;
   font-weight: 500;
   letter-spacing: 0.3rem;
-  margin: 1rem;
-}
-.line {
-  border-bottom: 2px solid #f7191e;
-  width: 80%;
-  display: block;
-  align-self: center;
-  margin-left: 1rem;
+  margin: 0.5rem 0;
 }
 
 .container {
-  width: 90vw;
+  width: 80vw;
   margin: auto;
 }
 .section-name {
-  display: flex;
-  margin: 0 5rem;
+  text-align: left;
+  margin: 0rem;
+  border-bottom: 2px solid #f7191e;
 }
 .titles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80vw;
 }
+
 .card {
-  width: 30%;
+  width: 90%;
   margin: 1rem;
   text-align: left;
   flex-basis: 25vw;
@@ -43,6 +38,10 @@ h1 {
 .card h3 {
   border-bottom: 2px dashed #c9c9c9;
   margin: 0;
+}
+
+.card .h3-2 {
+  border-bottom: none;
 }
 .card p {
   margin: 0;
@@ -71,6 +70,7 @@ a {
 }
 a:hover {
   background-color: #f7191e;
+  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -79,9 +79,15 @@ a:hover {
     width: 100%;
     margin: auto;
   }
-  nav ul,
-  .titles {
+  nav ul {
     flex-direction: column;
+  }
+  .titles {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;
+    margin: auto;
+    width: 90vw;
   }
   nav {
     width: 100%;
@@ -109,5 +115,13 @@ a:hover {
   }
   h1 {
     margin: 0rem;
+  }
+}
+@media (max-width: 375px) {
+  .titles {
+    grid-template-columns: 1fr;
+    /* column-gap: 2rem; */
+    margin: auto;
+    width: 90vw;
   }
 }
