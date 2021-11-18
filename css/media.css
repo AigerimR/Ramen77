@@ -1,3 +1,8 @@
+@media (max-width: 1280px) {
+  .gallery {
+    height: 100%;
+  }
+}
 @media (max-width: 1024px) {
   .icons,
   .flex-assortment,
